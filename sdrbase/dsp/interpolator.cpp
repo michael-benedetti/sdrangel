@@ -46,7 +46,7 @@ void Interpolator::createPolyphaseLowPass(
         double nbTapsPerPhase)
 {
 	int ntaps = (int)(nbTapsPerPhase * phaseSteps);
-	qDebug("Interpolator::createPolyphaseLowPass(%p, %d, %.5f, %.5f, %.5f, %.5f)", taps, phaseSteps, gain, sampleRateHz, cutoffFreqHz, nbTapsPerPhase);
+	qDebug("Interpolator::createPolyphaseLowPass(taps, %d, %.5f, %.5f, %.5f, %.5f)", phaseSteps, gain, sampleRateHz, cutoffFreqHz, nbTapsPerPhase);
 	qDebug("Interpolator::createPolyphaseLowPass: ntaps: %d", ntaps);
 
 	if ((ntaps % 2) != 0) {
