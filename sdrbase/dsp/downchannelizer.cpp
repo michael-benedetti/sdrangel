@@ -145,6 +145,7 @@ void DownChannelizer::applyChannelization()
 
 void DownChannelizer::setDecimation(unsigned int log2Decim, unsigned int filterChainHash)
 {
+    qDebug("DownChannelizer::setDecimation(%d, %d)", log2Decim, filterChainHash);
     m_log2Decim = log2Decim;
     m_filterChainHash = filterChainHash;
     applyDecimation();
